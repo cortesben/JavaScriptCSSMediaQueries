@@ -1,0 +1,23 @@
+.state-indicator {
+  position: absolute;
+  /*display: none;*/
+}
+
+/*mobile first*/
+.state-indicator:before {
+  content: 'break1';
+}
+
+/* tablet */
+@media all and (min-width: 768px) {
+  .state-indicator:before {
+    content: 'break2';
+  }
+}
+
+/* desktop */
+@media all and (min-width: 1200px) {
+  .state-indicator:before {
+    content: 'break3';
+  }
+}
