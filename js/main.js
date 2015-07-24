@@ -2,6 +2,8 @@
 
 document.addEventListener("breakpont1", function (e){
   console.log('Breakpoint one Event fired');
+  // var body = document.getElementsByTagName("body");
+  // body.classList.add('selected');
 });
 
 document.addEventListener("breakpont2", function (e){
