@@ -34,7 +34,7 @@ function getDeviceState() {
   var dynamicIndicator = document.querySelector('.state-indicator'),
     state = window.getComputedStyle(dynamicIndicator, ':before').getPropertyValue('content');
   // strip extra '' from return value
-  state = state.replace(/'/g, "");
+  state = state.replace(/("|')/g, "");
   // breakpoints switch statement
   switch (state) {
   case 'break1':
